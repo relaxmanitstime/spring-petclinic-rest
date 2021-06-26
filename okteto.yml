@@ -1,0 +1,8 @@
+name: api
+command: ["bash"]
+forward:
+  - 9966:9966
+sync:
+  - .:/src
+persistentVolume:
+  enabled: false
