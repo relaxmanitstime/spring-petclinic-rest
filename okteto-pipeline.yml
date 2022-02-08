@@ -1,5 +1,0 @@
-deploy:
-  - okteto build -t okteto.dev/api:${OKTETO_GIT_COMMIT} api
-  - helm upgrade --install spring-petclinic-rest chart --set tag=${OKTETO_GIT_COMMIT}
-devs:
-  - okteto.yml
